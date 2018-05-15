@@ -38,20 +38,16 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-aop')
-	compile group: 'com.alibaba', name: 'fastjson', version: "${fastJsonVersion}"
 	compile('org.springframework.boot:spring-boot-starter-jdbc'){
 		// 此处要去掉默认连接池  否则会报错  或者 spring.datasource的会多初始化连接池
 		exclude  group:'org.apache.tomcat',module:'tomcat-jdbc'
 	}
-	compile group: 'com.alibaba', name: 'druid', version: "${druidVersion}"
-	compile group: 'mysql', name: 'mysql-connector-java'
 	// 私有仓库
 	compile "com.mp.common:common:${mpCommonVersion}"
 	compile "com.thoughtworks.xstream:xstream:${xsreamVersion}"
 }
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter')
 	compileOnly('org.projectlombok:lombok')
 	runtime("org.springframework.boot:spring-boot-devtools")
 	testCompile('org.springframework.boot:spring-boot-starter-test')

@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/constant")
 public class ConstantRest {
+
+
+
     @RequestMapping("/userType")
     public IDataList getUserTypeList() throws Exception{
         return getList(Constants.USER_TYPE);

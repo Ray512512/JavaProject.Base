@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class CommonDao extends BaseDao{
+
     /**
      * 获取常量列表
      * @param param
