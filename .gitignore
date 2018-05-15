@@ -26,3 +26,6 @@ nbdist/
 .nb-gradle/
 
 src/main/resources
+gradle/
+out/
+classes/
